@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: test-service
+          uri: http://localhost:8000
+          predicates:
+            - Path=/test-service/**
+          filters:
+            - name: RewritePath
+              args:
+                regexp: /test-service(?<remaining>.*)
+                replacement: ${remaining}
+            - name: CircuitBreaker
+              args:
+                name: test-service
+                fallbackUri: forward:/fallback
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - info
+          - health
+          - loggers
+          - mappings
+          - metrics
+          - shutdown
+          - prometheus
+
+#resilience4j:
+#  circuitbreaker:
+#    configs:
+#        default:
+#            slidingWindowSize: 5
+#            minimumNumberOfCalls: 5
+#            permittedNumberOfCallsInHalfOpenState: 3
+#            waitDurationInOpenState: 5000
+#            failureRateThreshold: 50
+#            eventConsumerBufferSize: 10
+#            recordExceptions:
+#            - java.io.IOException
+#            - java.util.concurrent.TimeoutException
+#    instances:
+#      test:
+#        baseConfig: default
+#        register-health-indicator: true

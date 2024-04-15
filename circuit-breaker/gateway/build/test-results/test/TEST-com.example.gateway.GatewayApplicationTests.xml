@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.gateway.GatewayApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-15T00:44:58" hostname="DESKTOP-LL832F4" time="0.487">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.gateway.GatewayApplicationTests" time="0.487"/>
+  <system-out><![CDATA[09:44:56.276 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.gateway.GatewayApplicationTests]: GatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:44:56.334 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.gateway.GatewayApplication for test class com.example.gateway.GatewayApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-04-15T09:44:56.700+09:00  INFO 15820 --- [gateway-service] [    Test worker] c.e.gateway.GatewayApplicationTests      : Starting GatewayApplicationTests using Java 17.0.10 with PID 15820 (started by SSAFY in C:\Users\SSAFY\Desktop\infra\circuit-breaker\gateway)
+2024-04-15T09:44:56.701+09:00  INFO 15820 --- [gateway-service] [    Test worker] c.e.gateway.GatewayApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-04-15T09:44:57.547+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e6d8c81-b758-3a17-b32c-c1ca1735944c
+2024-04-15T09:44:58.315+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2024-04-15T09:44:58.316+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-04-15T09:44:58.572+09:00  INFO 15820 --- [gateway-service] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoint(s) beneath base path '/actuator'
+2024-04-15T09:44:58.900+09:00  INFO 15820 --- [gateway-service] [    Test worker] c.e.gateway.GatewayApplicationTests      : Started GatewayApplicationTests in 2.456 seconds (process running for 3.193)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
